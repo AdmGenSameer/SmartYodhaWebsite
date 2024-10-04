@@ -5,74 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Role</title>
     <style>
-        /* Color variables from the landing page */
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --button-bg: #e74c3c;
-            --button-hover-bg: #c0392b;
-            --background-gradient: -webkit-linear-gradient(20deg, #8ea8c3, #2be3e9);
-            --text-color: #333333;
-            --light-text: #ecf0f1;
-        }
-
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: var(--background-gradient);
+            font-family: Arial, sans-serif;
+            background-color: rgba(129, 169, 34, 0.24);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
-
         .container {
             display: flex;
             justify-content: space-around;
             width: 80%;
             max-width: 1000px;
         }
-
         .box {
             width: 200px;
             height: 300px;
-            border: 2px solid var(--accent-color);
+            border: 2px solid orange;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             border-radius: 30px;
-            background-color: var(--primary-color);
-            transition: background-color 0.3s ease;
+            background-color:#3c5a78 ;
         }
-
         .box img {
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
         }
-
         .box h3 {
-            color: var(--light-text);
+            color: orange;
             font-size: 24px;
         }
-
         .box.faculty h3 {
-            background-color: var(--secondary-color);
+            color: rgb(40, 6, 6);
+            background-color: #a8b9bedf;
+            border: 2px solid rgb(192, 138, 47) ;
             padding: 8px;
             border-radius: 15px;
+            margin-bottom: 0px;
         }
-
         .box.student h3 {
-            background-color: var(--accent-color);
+            color: rgb(47, 5, 43);
+            background-color: #86aab5df;
+            border: 2px solid rgb(192, 138, 47) ;
             padding: 8px;
             border-radius: 15px;
+            margin-bottom: 0px;
         }
-
         .box:hover {
-            background-color: var(--button-hover-bg);
+            background-color: #333;
         }
     </style>
 </head>
