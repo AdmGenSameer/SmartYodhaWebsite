@@ -55,7 +55,7 @@ body {
 }
 
 .login-container h2 {
-    font-size: 2.4rem; /* Smaller heading */
+    font-size: 3.5rem; /* Smaller heading */
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -103,7 +103,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.0001rem;
     cursor: pointer;
 }
 
@@ -130,12 +130,12 @@ body {
 }
 
 .info-container h2 {
-    font-size: 2.4rem; /* Smaller heading */
+    font-size: 3.5rem; /* Smaller heading */
     margin-bottom: 1.5rem;
 }
 
 .info-container p {
-    font-size: 1.6rem; /* Smaller text */
+    font-size: 2.5rem; /* Smaller text */
     margin-bottom: 1.5rem;
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .goal-info h3 {
-    font-size: 2rem; /* Smaller subheading */
+    font-size: 2.7rem; /* Smaller subheading */
     margin-bottom: 1rem;
 }
 
