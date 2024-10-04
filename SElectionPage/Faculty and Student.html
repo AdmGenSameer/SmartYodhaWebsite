@@ -34,6 +34,13 @@
             max-width: 1000px;
         }
 
+        .header {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 2.5s ease;
+        }
+
         .box {
             width: 200px;
             height: 300px;
@@ -46,6 +53,7 @@
             border-radius: 30px;
             background-color: var(--primary-color);
             transition: background-color 0.3s ease;
+            animation: fadeIn 2s ease-out;
         }
 
         .box img {
@@ -60,7 +68,7 @@
         }
 
         .box.faculty h3 {
-            background-color: var(--secondary-color);
+            background-color: var(--accent-color);
             padding: 8px;
             border-radius: 15px;
         }
@@ -74,30 +82,29 @@
         .box:hover {
             background-color: var(--button-hover-bg);
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box faculty" onclick="selectRole('faculty')">
+        <br><br>
+        <h2 class="header"><span>Select Your Role</span></h2>
+        <div class="box faculty">
             <img src="employee.png" alt="Faculty Icon">
-            <h3>Faculty</h3>
+            <h3><a href="index.html" style="color: #ecf0f1;">Faculty</a></h3>
         </div>
-        <div class="box student" onclick="selectRole('student')">
+        <div class="box student">
             <img src="students.png" alt="Student Icon">
-            <h3>Student</h3>
+            <h3><a href="index.html" style="color: #ecf0f1;">Student</a></h3>
         </div>
     </div>
-
-    <script>
-        function selectRole(role) {
-            if (role === 'faculty') {
-                alert('You selected Faculty!');
-                // Redirect to Faculty page or any other functionality
-            } else if (role === 'student') {
-                alert('You selected Student!');
-                // Redirect to Student page or any other functionality
-            }
-        }
-    </script>
 </body>
 </html>
