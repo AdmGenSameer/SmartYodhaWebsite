@@ -36,13 +36,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 70%; /* Reduced width */
-    max-width: 900px; /* Shorter container */
-    height: 450px; /* Reduced height */
+    width: 70%;
+    max-width: 900px;
+    height: 450px;
 }
 
 .login-container, .info-container {
-    padding: 1.5rem; /* Reduced padding */
+    padding: 1.5rem;
     flex: 1;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .login-container h2 {
-    font-size: 3.5rem; /* Smaller heading */
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -67,7 +67,7 @@ body {
 
 .login-container label {
     margin-bottom: 0.5rem;
-    font-size: 1.4rem; /* Smaller label */
+    font-size: 1.4rem;
 }
 
 .login-container input {
@@ -75,7 +75,7 @@ body {
     margin-bottom: 1rem;
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    font-size: 1.4rem; /* Smaller input text */
+    font-size: 1.4rem;
 }
 
 .login-container button {
@@ -85,7 +85,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.4rem; /* Smaller button text */
+    font-size: 1.4rem;
     transition: background-color 0.3s ease;
 }
 
@@ -103,7 +103,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.0001rem;
     cursor: pointer;
 }
 
@@ -130,12 +129,12 @@ body {
 }
 
 .info-container h2 {
-    font-size: 3.5rem; /* Smaller heading */
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
 }
 
 .info-container p {
-    font-size: 2.5rem; /* Smaller text */
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -146,12 +145,12 @@ body {
 }
 
 .goal-info h3 {
-    font-size: 2.7rem; /* Smaller subheading */
+    font-size: 2.7rem;
     margin-bottom: 1rem;
 }
 
 .goal-info p {
-    font-size: 1.4rem; /* Smaller text */
+    font-size: 1.4rem;
     margin-bottom: 1.5rem;
 }
 
@@ -162,10 +161,62 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.4rem; /* Smaller button text */
+    font-size: 1.4rem;
     transition: background-color 0.3s ease;
 }
 
 .goal-info button:hover {
     background-color: var(--button-hover-bg);
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* Smaller base font size on mobile */
+    }
+
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+        width: 90%;
+        height: auto; /* Allow flexible height */
+    }
+
+    .login-container, .info-container {
+        padding: 2rem;
+    }
+
+    .login-container h2, .info-container h2 {
+        font-size: 3rem; /* Reduce heading size */
+    }
+
+    .info-container p {
+        font-size: 2rem; /* Adjust text size */
+    }
+
+    .info-container img {
+        width: 100%; /* Full width image on mobile */
+    }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%; /* Further reduce base font size */
+    }
+
+    .login-container h2, .info-container h2 {
+        font-size: 2.5rem; /* Smaller heading on small devices */
+    }
+
+    .login-container input, .login-container button, .goal-info button {
+        font-size: 1.2rem; /* Smaller input and button text */
+    }
+
+    .info-container p {
+        font-size: 1.8rem; /* Further adjust text size */
+    }
+
+    .goal-info h3 {
+        font-size: 2.2rem;
+    }
 }
