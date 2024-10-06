@@ -383,3 +383,137 @@ section {
 .footer .box a:hover {
     color: var(--accent-color);
 }
+
+/* Responsive Layout Adjustments */
+
+/* Mobile-specific adjustments (up to 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 0 2%;
+    }
+
+    header {
+        padding: 1.2rem 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .butt {
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 6rem 3%;
+        text-align: center;
+    }
+
+    .home .content h1 {
+        font-size: 3.2rem;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.8rem;
+        color: #34495e;
+        margin-bottom: 2rem;
+    }
+
+    .home .image {
+        margin-top: 3rem;
+    }
+
+    .home .image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section {
+        padding: 5rem 3%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .menu .box-container {
+        flex-direction: column;
+    }
+
+    .menu .box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .contact .image, .contact form {
+        flex: 1;
+        padding: 2rem;
+    }
+
+    .footer .box-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .box {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* For tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 1.2rem 7%;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+    }
+
+    .home .content h1 {
+        font-size: 4rem;
+    }
+
+    .home .content p {
+        font-size: 1.9rem;
+    }
+
+    .menu .box {
+        flex-basis: calc(50% - 2rem);
+    }
+
+    .contact form {
+        padding: 3rem;
+    }
+
+    .footer .box {
+        flex-basis: 50%;
+    }
+}
